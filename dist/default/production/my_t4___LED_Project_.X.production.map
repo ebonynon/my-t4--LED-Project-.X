@@ -1,0 +1,380 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\HI-TECH Software\PICC\9.83\dat\en_msgs.txt -cs \
+  -h+dist/default/production\my_t4___LED_Project_.X.production.sym -z \
+  -Q16F877 -ol.obj \
+  -Mdist/default/production/my_t4___LED_Project_.X.production.map -E1 \
+  -ACONST=00h-0FFhx32 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
+  -AENTRY=00h-0FFhx32 -ASTRING=00h-0FFhx32 -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh -ABANK3=0190h-01EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ACOMMON=070h-07Fh \
+  -ASFR0=00h-01Fh -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pfunctab=CODE \
+  -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=02000h-02003h \
+  -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA \
+  -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  C:\Users\SITHUM~1\AppData\Local\Temp\s5js.obj \
+  dist/default/production\my_t4___LED_Project_.X.production.obj 
+
+Object code version is 3.10
+
+Machine type is 16F877
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\SITHUM~1\AppData\Local\Temp\s5js.obj
+                end_init                              0        0        3        0       0
+dist/default/production\my_t4___LED_Project_.X.production.obj
+                config                             2007     2007        1     400E       0
+                maintext_split_1                    EAC      EAC      154     1D58       0
+                cstackCOMMON                         70       70        3       70       1
+                cinit                                F4       F4        4      1E8       0
+                maintext                             F8       F8      708      1F0       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CONST          
+
+        CLASS   CODE           
+                end_init                              0        0        3         0
+                maintext_split_1                    EAC      EAC      154         0
+                cinit                                F4       F4        4         0
+                maintext                             F8       F8      708         0
+
+        CLASS   STRCODE        
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+
+        CLASS   BANK0          
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        3         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000003  000003         0       0  CODE        2
+                cstackCOMMON                   000070  000003  000073        70       1  COMMON      1
+                cinit                          0000F4  000004  0000F8       1E8       0  CODE        2
+                maintext                       0000F8  000708  000800       1F0       0  CODE        2
+                maintext_split_1               000EAC  000154  001000      1D58       0  CODE        2
+                config                         002007  000001  002008      400E       0  CONFIG      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0020-006F             50           1
+        BANK1            00A0-00EF             50           1
+        BANK2            0110-016F             60           1
+        BANK3            0190-01EF             60           1
+        CODE             0003-00F3             F1           2
+                         0800-0EAB            6AC
+                         1000-1FFF            800
+        COMMON           0073-007D              B           1
+        CONST            0003-00F3             F1           2
+                         0800-0EAB            100
+                         1000-1FFF            100
+        EEDATA           2100-21FF            100           2
+        ENTRY            0003-00F3             F1           2
+                         0800-0EAB            100
+                         1000-1FFF            100
+        IDLOC            2000-2003              4           2
+        RAM              0020-006F             50           1
+                         00A0-00EF             50
+                         0110-016F             60
+                         0190-01EF             60
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-010F             10           1
+        SFR3             0180-018F             10           1
+        STRCODE          0003-00F3             F1           2
+                         0800-0EAB            6AC
+                         1000-1FFF           1000
+        STRING           0003-00F3             F1           2
+                         0800-0EAB            100
+                         1000-1FFF            100
+
+                                  Symbol Table
+
+??_main               cstackCOMMON     0070
+?_main                cstackCOMMON     0070
+_PORTB                (abs)            0006
+_TRISB                (abs)            0086
+__Habs1               abs1             0000
+__Hbank0              bank0            0000
+__Hbank1              bank1            0000
+__Hbank2              bank2            0000
+__Hbank3              bank3            0000
+__Hcinit              cinit            0000
+__Hclrtext            clrtext          0000
+__Hcode               code             0000
+__Hcommon             common           0000
+__Hconfig             config           2008
+__HcstackCOMMON       cstackCOMMON     0000
+__Heeprom_data        eeprom_data      0000
+__Hend_init           end_init         0003
+__Hfunctab            functab          0000
+__Hidloc              idloc            0000
+__Hinit               init             0000
+__Hintentry           intentry         0000
+__Hmaintext           maintext         0000
+__Hmaintext_split_1   maintext_split_1 0000
+__Hpa_nodes           pa_nodes         0000
+__Hpowerup            powerup          0000
+__Hram                ram              0000
+__Hreset_vec          reset_vec        0000
+__Hsfr0               sfr0             0000
+__Hsfr1               sfr1             0000
+__Hsfr2               sfr2             0000
+__Hsfr3               sfr3             0000
+__Hstrings            strings          0000
+__Htext               text             0000
+__Labs1               abs1             0000
+__Lbank0              bank0            0000
+__Lbank1              bank1            0000
+__Lbank2              bank2            0000
+__Lbank3              bank3            0000
+__Lcinit              cinit            0000
+__Lclrtext            clrtext          0000
+__Lcode               code             0000
+__Lcommon             common           0000
+__Lconfig             config           2007
+__LcstackCOMMON       cstackCOMMON     0000
+__Leeprom_data        eeprom_data      0000
+__Lend_init           end_init         0000
+__Lfunctab            functab          0000
+__Lidloc              idloc            0000
+__Linit               init             0000
+__Lintentry           intentry         0000
+__Lmaintext           maintext         0000
+__Lmaintext_split_1   maintext_split_1 0000
+__Lpa_nodes           pa_nodes         0000
+__Lpowerup            powerup          0000
+__Lram                ram              0000
+__Lreset_vec          reset_vec        0000
+__Lsfr0               sfr0             0000
+__Lsfr1               sfr1             0000
+__Lsfr2               sfr2             0000
+__Lsfr3               sfr3             0000
+__Lstrings            strings          0000
+__Ltext               text             0000
+__S0                  (abs)            2008
+__S1                  (abs)            0073
+__S2                  (abs)            0000
+__end_of_main         maintext_split_1 1000
+__pcstackCOMMON       cstackCOMMON     0070
+__pmaintext           maintext         00F8
+__size_of_main        (abs)            0000
+_exit                 init             0000
+_main                 maintext         00F8
+btemp                 (abs)            007E
+end_of_initialization cinit            00F4
+intlevel0             functab          0000
+intlevel1             functab          0000
+intlevel2             functab          0000
+intlevel3             functab          0000
+intlevel4             functab          0000
+intlevel5             functab          0000
+l1653                                      
+l1657                                      
+l1659                                      
+l1661                                      
+l1663                                      
+l1665                                      
+l1667                                      
+l1669                                      
+l1671                                      
+l1673                                      
+l1675                                      
+l1677                                      
+l1679                                      
+l1681                                      
+l1683                                      
+l1685                                      
+l1687                                      
+l1689                                      
+l1691                                      
+l1693                                      
+l1695                                      
+l1697                                      
+l1699                                      
+l1701                                      
+l1703                                      
+l1705                                      
+l1707                                      
+l1709                                      
+l1711                                      
+l1713                                      
+l1715                                      
+l1717                                      
+l1719                                      
+l1721                                      
+l1723                                      
+l1725                                      
+l1727                                      
+l1729                                      
+l1731                                      
+l1733                                      
+l1735                                      
+l1737                                      
+l1739                                      
+l1741                                      
+l1743                                      
+l1745                                      
+l1747                                      
+l1749                                      
+l1751                                      
+l1753                                      
+l1755                                      
+l1757                                      
+l1759                                      
+l1761                                      
+l1763                                      
+l1765                                      
+l1767                                      
+l1769                                      
+l1771                                      
+l1773                                      
+l1775                                      
+l1777                                      
+l1779                                      
+l1781                                      
+l1783                                      
+l1785                                      
+l1787                                      
+l1789                                      
+l1791                                      
+l1793                                      
+l1795                                      
+l1797                                      
+l1799                                      
+l1801                                      
+l1803                                      
+l1805                                      
+l1807                                      
+l1809                                      
+l1811                                      
+l1813                                      
+l1815                                      
+l1817                                      
+l1819                                      
+l1821                                      
+l1823                                      
+l1825                                      
+l1827                                      
+l1829                                      
+l1831                                      
+l1833                                      
+l1835                                      
+l1837                                      
+l1839                                      
+l1841                                      
+l1843                                      
+l1845                                      
+l1847                                      
+l1849                                      
+l1851                                      
+l1853                                      
+l1855                                      
+l1857                                      
+l1859                                      
+l1861                                      
+l1863                                      
+l1865                                      
+l1867                                      
+l1869                                      
+l1871                                      
+l1873                                      
+l1875                                      
+l1877                                      
+l1879                                      
+l1881                                      
+l1883                                      
+l1885                                      
+l1887                                      
+l1889                                      
+l1891                                      
+l1893                                      
+l1895                                      
+l1897                                      
+l1899                                      
+l1901                                      
+l1903                                      
+l1905                                      
+l1907                                      
+l1909                                      
+l1911                                      
+l1913                                      
+l1915                                      
+l1917                                      
+l1919                                      
+l1921                                      
+l1923                                      
+l1925                                      
+l1927                                      
+l1929                                      
+l1931                                      
+l1933                                      
+l1935                                      
+l1937                                      
+l1939                                      
+l1941                                      
+l1943                                      
+l1945                                      
+l1947                                      
+l1949                                      
+l1951                                      
+l1953                                      
+l1955                                      
+l1957                                      
+l1959                                      
+l1961                                      
+l1963                                      
+l1965                                      
+l1967                                      
+l1969                                      
+l1971                                      
+l1973                                      
+l1975                                      
+l1977                                      
+l1979                                      
+l1981                                      
+l1983                                      
+l1985                                      
+reset_vec             reset_vec        0000
+start                 init             0000
+start_initialization  cinit            00F4
+wtemp0                (abs)            007E
