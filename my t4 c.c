@@ -1,6 +1,6 @@
 /* 
  * File:   my t4 c.c
- * Author: sithum sandeepa
+ * Author: ebonynon
  *
  * Created on March 12, 2016, 5:30 PM
  */
